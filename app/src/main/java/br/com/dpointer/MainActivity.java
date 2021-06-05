@@ -1,4 +1,4 @@
-package com.example.comerciocamacari;
+package br.com.dpointer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import br.com.dpointer.R;
 
 public class MainActivity extends AppCompatActivity {
     private WebView webView;
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         webView = findViewById(R.id.webview);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://comerciocamacari.github.io/mobile/#");
+        webView.loadUrl("https://www.dpointer.com.br//mobile/#");
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
